@@ -424,7 +424,8 @@ You have managed to get through this enourmous document and apparently still hav
 
 First things first **BACKUP EVERYTHING**. Up to this point you have done a lot of work and you might end up breaking your code so create a copy of everything you have done.
 
-Ideas:
+###Ideas:
+
 1. Move `add_joke.py` into the main python file.
     1. When you run the main python file it will run normally but when you run `python joker.py add` it will switch to add mode
     2. Research:
