@@ -1,4 +1,4 @@
-# Define the jokes varialbe with two jokes in it.
+# Define the jokes variable with two jokes in it.
 jokes = ['''
 Why didn't the mummy have any friends?
 (Because he was wrapped up in himself!)
