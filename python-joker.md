@@ -1,17 +1,17 @@
-#Python Joker
+# Python Joker
 
-###Overview
+### Overview
 
 In this tutorial you will make a python programme that will print out halloween themed jokes.
 
-###Requirements
+### Requirements
 
 We would advise that you have done at least a little bit of python before. If you have already done a lot then there are more advance extensions later on.
 
 - You must have `python 2` installed
 - You should either have the python IDLE or a suitable text editor (see list below). Using a text editor that is not the python IDLE will require that you know how to run python files preferably from the command line (more information below).
 
-####Running from the commandline
+#### Running from the commandline
 
 **NOTE:** Skip this section if you have not used the command line before.
 
@@ -37,7 +37,7 @@ You will hopefully get an output of `Python 2.` then a few other numbers. If the
 
 When you want to run a python file type `python ` followed by the relative path to that file. If you are unsure of how to do this just ask someone around you or a mentor.
 
-####Running from the IDLE
+#### Running from the IDLE
 
 **NOTE:** Skip this section if you are comfortable using the command line.
 
@@ -47,7 +47,7 @@ When you want to run a python file type `python ` followed by the relative path 
 4. Save the file as prompted.
 5. Check the output to ensure that it says `Hello World`.
 
-###Getting started
+### Getting started
 
 Place this code into your python file and run it:
 
@@ -58,7 +58,7 @@ print('Hello ' + input)
 
 **If you get an error** then you are probably running the wrong python version and you should ask for help.
 
-###Understanding lists
+### Understanding lists
 
 When we store lists of items in computers we store them in what are called `arrays`.
 
@@ -72,7 +72,7 @@ myarray = ['a', 'b', 'c']
 
 **Terminology:** an item in an array is called an `element`.
 
-###Looping over lists:
+### Looping over lists:
 
 Now we have a list, so what can we do with it?
 
@@ -101,15 +101,15 @@ for greeting in greetings:
 
 Copy this code into a python file and run it.
 
-####Extensions
+#### Extensions
 
 Try these extensions:
 1. Change the program to not print `Loop!` each time and only print the greeting
 2. Add another greeting such as `Hi` or `Good afternoon`.
 
-##Putting it all together:
+## Putting it all together:
 
-####One last thing:
+#### One last thing:
 You will find that when putting text in quotes (`'random text'`) it is difficult when there is lots of text than goes onto more than one line.
 Fortunately python has you covered with the use of tripple quotation marks.
 See this example:
@@ -122,7 +122,7 @@ more than
 one line''', '''Some more text that is in another element
 of the list''']
 ```
-####Back to the coding
+#### Back to the coding
 
 1. Search the web for halloween themed jokes or just look at [this website] (http://www.enchantedlearning.com/jokes/topics/halloween.shtml Halloween Jokes)
 
@@ -131,7 +131,7 @@ of the list''']
 
 If you get stuck or have finished and want to look at the finished code [click here] (joker-stuck-1.py)
 
-###Evaluation:
+### Evaluation:
 
 So you now have a method of getting jokes printed out onto a screen!
 *But* there are some issues:
@@ -139,14 +139,14 @@ So you now have a method of getting jokes printed out onto a screen!
 - It can be difficult to tell when a joke starts or stops.
 - There is no time to let people think of the answer as they are printed at the same time.
 
-####So how can we fix these issues?
+#### So how can we fix these issues?
 
 1. We can put `raw_input()` after we print out each joke. This will require the user to hit enter before the code will continue so they can decided when they are ready to go on.
 - We can place a few lines once the joke has finished. If you have never done this before it might seem a bit confusing as the code is `print('\n')`. What `\n` essentially means is `go onto a new line please...`. If we wanted more lines then we just add more `\n`. *Make sure that the `\n` goes inside quotes. It is still text, just not text that we read.*
 - Finally this is the most complicated of the issues to solve. As it works currently we have an array called `jokes` and each element of that array contains both the joke and the answer. A solution would be to put the joke and answer as different elements in the array but this isn't neat.
 If you asked a programmer about this solution they probably wouldn't like it as the array `jokes` should contain a bunch of `joke` elements not some combination of the joke and it's punchline. So we can use something in python called a `dictionary` which will allow us to neatly contain both the joke and the punchline seperately but as the same element in the array. If this sounds confusing try to read ahead into the next section.
 
-###Dictionaries:
+### Dictionaries:
 
 In python there is a type of object called a `dictionary`. When you think of a dictionary you think of a book where you can search for a word and then find a bunch of text about it (A.K.A. the definition of the word).
 
@@ -178,7 +178,7 @@ my_dictionary = {
 
 Another thing to note is that the `value` can be any python object. It can be a number or even another dictionary the possibilities are endless.
 
-####Accessing the data:
+#### Accessing the data:
 
 So now we have a dictionary called `joke` and we want to print out the punchline, how would we do that?
 
@@ -216,13 +216,13 @@ print('\\ <- This is a backslash')
 ```
 This will print: `\ <- This is a backslash`.
 
-##More Coding:
+## More Coding:
 
 So, with this information and the use of the internet can you try to fix the issues mentioned above?
 
 If you get stuck you can look at the source code [here] (joker-stuck-2.py)
 
-##Advance
+## Advance
 
 Right now you have a static variable called `jokes` which contains all of your jokes.
 
@@ -260,7 +260,7 @@ another joke|another punch line
 
 Another thing to note is that in real CSV files there would be a line at the top that would indicate the column headers, but we don't need to worry about that.
 
-###Creating files in python
+### Creating files in python
 
 The python syntax for creating and editing a file is:
 ```python
@@ -324,7 +324,7 @@ print(file.read())
 file.close()
 ```
 
-###A few more things
+### A few more things
 
 Before you're ready to move on to creating this yourself there are two more things we need to cover.
 
@@ -356,7 +356,7 @@ say('How are you!')
 
 The paramters are seperate by commas in the brackets such as `param1, param2...`.
 
-####Split
+#### Split
 
 The next thing you need to know before you start working on your project again is the `split(string)` and `splitlines` functions.
 
@@ -389,9 +389,9 @@ Make sure you understand exactly why everything is outputted the way it is.
 
 What type of variable does `split` and `splitlines` produce?
 
-##Back to the coding
+## Back to the coding
 
-###Task:
+### Task:
 1. Make another python file called `add_joke.py` or something similar
     1. The file needs to ask the user to type in the question and then the punch line
     2. It should store these in variables then combine them into one called something like `joke`, there needs to be a comma seperating them
@@ -403,7 +403,7 @@ What type of variable does `split` and `splitlines` produce?
     4. Add each column to an array called jokes
     5. Print them out as before
 
-###Thing to keep in mind
+### Thing to keep in mind
 
 - The CSV file should end in '.csv'. So it's full name would be something like `jokes.csv`
 - The python files need to be in the same folder
@@ -412,19 +412,19 @@ What type of variable does `split` and `splitlines` produce?
 - Make sure that the jokes that you are adding **do not contain commas**. Remember CSV files depend on commas, there are ways to get around this but we don't really have time to work on that.
 - If you get stuck then double check the information I gave earlier and then ask others, if you get **really** stuck then you can look at the source code as mentioned below
 
-####Source Code
+#### Source Code
 
 If you get stuck or have finished you can take a look at the code here:
 - [add_joker.py] (add_joke-stuck.py)
 - [joker.py] (joker-stuck-3.py)
 
-##Finishing off:
+## Finishing off:
 
 You have managed to get through this enourmous document and apparently still have time left, so I will set you some difficult tasks which you can choose a few to research and attempt to implement.
 
 First things first **BACKUP EVERYTHING**. Up to this point you have done a lot of work and you might end up breaking your code so create a copy of everything you have done.
 
-###Ideas:
+### Ideas:
 
 1. Move `add_joke.py` into the main python file.
     1. When you run the main python file it will run normally but when you run `python joker.py add` it will switch to add mode
